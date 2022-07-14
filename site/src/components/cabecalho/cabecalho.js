@@ -1,7 +1,7 @@
 import storage from 'local-storage'
 
 import { useState, useEffect } from 'react'
-import './index.scss'
+import './cabecalho.scss'
 import { useNavigate } from 'react-router-dom'
 
 export default function Index() {
@@ -19,6 +19,7 @@ export default function Index() {
     }, [])
 
     return (
+        
         <header className='cabecalho'>
             <div className='bemvindo'> Seja bem-vindo, {usuario} !</div>
             <div>
@@ -27,5 +28,7 @@ export default function Index() {
                 </div>
             </div>
         </header>
+    
+        
     );
 }
