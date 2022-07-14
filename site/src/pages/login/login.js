@@ -14,8 +14,8 @@ export default function Login () {
     const [carregando,setCarregando] =useState (false)
     
 
-    const navigate= useNavigate ()
-    const ref= useRef ()
+    const navigate = useNavigate();
+    const ref = useRef();
     
 
     useEffect(() => {
@@ -48,7 +48,7 @@ export default function Login () {
         <main className='malo'> 
             <LoadingBar color='#f11946' ref={ref} />
 
-            <div className='in'> <img src= "/assets/images/hime.svg"/> </div>
+            <div className='in'> <img src= "/assets/images/hime.svg" alt='logo'/> </div>
 
 
             <div className='sv'>Seja Bem-Vindo!</div>

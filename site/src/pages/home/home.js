@@ -1,6 +1,9 @@
 import storage from 'local-storage'
 import { useEffect } from  'react'
-import { useNavigate } from   'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+
+import Menu from '../../components/menu'
+import Cabecalho from '../../components/cabecalho'
 
 export default function Home (){
 
@@ -13,7 +16,14 @@ export default function Home (){
 
     return (
         <main className='maho'>
-            <h1>oi</h1>
+            <Menu selecionado='home'/>
+            <div className='container'>
+                <Cabecalho />
+                
+                <div className='conteudo'>
+                    <img className='logo' src='/assets/images/logo-styled.svg' alt='logo estilizado' />
+                </div>
+            </div>
         </main>
     )
 }
