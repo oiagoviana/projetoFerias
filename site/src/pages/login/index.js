@@ -1,4 +1,4 @@
-import './login.scss'
+import './index.scss'
 import { login } from '../../api/usuarioapi.js'
 import storage from 'local-storage'
 import LoadingBar from 'react-top-loading-bar'
@@ -46,6 +46,7 @@ export default function Login () {
 
     return (
         <main className='malo'> 
+            <div className='main'>
             <LoadingBar color='#f11946' ref={ref} />
 
             <div className='in'> <img src= "/assets/images/hime.svg" alt='logo'/> </div>
@@ -73,7 +74,8 @@ export default function Login () {
 
             <div className='erro'>
                 {erro}
-            </div>
+                </div>
+                </div>
 
 
         </main>

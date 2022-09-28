@@ -1,7 +1,7 @@
 import storage from 'local-storage'
 
 import { useState, useEffect } from 'react'
-import './cabecalho.scss'
+import './index.scss'
 import { useNavigate } from 'react-router-dom'
 
 export default function Index() {

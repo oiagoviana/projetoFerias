@@ -1,5 +1,5 @@
 import storage from 'local-storage'
-import './menu.scss'
+import './index.scss'
 import { useNavigate, Link } from 'react-router-dom'
 
 

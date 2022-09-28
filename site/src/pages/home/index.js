@@ -1,4 +1,4 @@
-import './home.scss'
+import './index.scss'
 import storage from 'local-storage'
 import { useEffect } from  'react'
 import { useNavigate } from 'react-router-dom'
