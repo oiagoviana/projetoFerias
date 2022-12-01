@@ -1,16 +1,20 @@
 
 .cabecalho {
-    position:relative;
-    z-index: 1;
-
     display: flex;
-    justify-content: space-between;
+    width: 82vw;
     
-    padding: 0px 80px;
-   
-    box-shadow: 1px 2px 10px #e3e3e3;
-    
-}
+
+    .div-cabe{
+        position:relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 80px;
+        box-shadow: 1px 2px 10px #e3e3e3;
+        height: 8vh;
+        width: 85vw;    
+    }
 
 
 .bemvindo {
@@ -31,4 +35,6 @@
 
     height: 45px;
     width: 45px;
+}
+
 }

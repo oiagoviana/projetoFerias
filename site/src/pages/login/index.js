@@ -24,7 +24,10 @@ export default function Login () {
         }
     }, [])
 
-    async function entrarClique () {
+    async function entrarClique(e) {
+        if (e && e.key && e.key != 'Enter')
+            return;
+        
         ref.current.continuousStart();
         setCarregando (true)
         try {
@@ -59,13 +62,26 @@ export default function Login () {
             <div className='ema'>
                 <label>E-mail:</label>
 
-                <input placeholder='alessa@gmail.com' className='paco' value={email} onChange={e => setEmail(e.target.value)}></input>
+                        <input
+                            placeholder='alessa@gmail.com'
+                            className='paco'
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                            onKeyDown={entrarClique}>
+                            </input>
             </div>
 
             <div className='se'>
                 <label>Senha:</label>
 
-                <input placeholder='***********' type='password' className='paco' value={senha} onChange={e => setSenha(e.target.value)}></input>
+                        <input
+                            placeholder='***********'
+                            type='password'
+                            className='paco'
+                            value={senha}
+                            onChange={e => setSenha(e.target.value)}
+                            onKeyDown={entrarClique}>
+                            </input>
             </div>
 
             </div>

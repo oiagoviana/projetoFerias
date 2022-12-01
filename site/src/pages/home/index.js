@@ -4,7 +4,7 @@ import { useEffect } from  'react'
 import { useNavigate } from 'react-router-dom'
 
 import Menu from '../../components/menu'
-import Cabecalho from '../../components/cabecalho/cabecalho'
+import Cabecalho from '../../components/cabecalho'
 
 export default function Home (){
 
@@ -17,20 +17,18 @@ export default function Home (){
 
     return (
         <main className='maho'>
-            <Cabecalho />
-            <div className='container'>
-            <div className='conteudo'>
-                   
-                </div>
-                
-                <Menu selecionado='home'/>
-                
-                
+            <div className='div-home'>
+                <Menu selecionado='home' />
             </div>
+            
+            <div className='div-direita'>
+                <Cabecalho />
+                <img src='/assets/images/groupe.png' className='imagem' alt='' />
+                
 
-            <div className='imagem'>
-                <img src='/assets/images/groupe.png'></img>
             </div>
+            
+            
         </main>
     )
 }

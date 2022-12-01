@@ -29,17 +29,17 @@ export default function Index(props) {
 
                 <div className='menu-opcoes'>
                     <Link to='/home' className={verificarMenuSelecionado('home')} >
-                        <img src='/assets/images/home.svg' alt='home'/>
+                        <img className='imgs' src='/assets/images/home.svg' alt='home'/>
                         <div>Home</div>
                     </Link>
 
                     <Link to='/cadastrar' className={verificarMenuSelecionado('cadastrar')}>
-                        <img src='/assets/images/cadastra.png' alt='cadastrar' />
+                        <img className='imgs' src='/assets/images/cadastra.png' alt='cadastrar' />
                         <div>Cadastrar</div>
                     </Link>
 
                     <Link to='consultar' className={verificarMenuSelecionado('consultar')}>
-                        <img src='/assets/images/consulta.png' alt='consultar' />
+                        <img className='imgs' src='/assets/images/consulta.png' alt='consultar' />
                         <div>Consultar</div>
                     </Link>
                 </div>

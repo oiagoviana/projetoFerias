@@ -1,16 +1,12 @@
 .menu{
     position: relative;
     z-index: 10;
-
-    width: 290px;
-    padding-bottom: 80px;
+    width: 18em;
+    height: 100vh;
     background-color: #363434;
-    
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 
     .logo {
         display: flex;
@@ -18,9 +14,11 @@
         margin-bottom: 100px;
         padding: 40px;
     }
+
     .logo img {
         width: 110px;
     }
+
     .logo div {
         font: 700 22px 'Inter';
         color: #E9E9E9;
@@ -30,12 +28,10 @@
 
     .menu-opcoes > a {
         display: flex;
-        align-items: center;
-        
+        align-items: center;   
         padding: 30px 70px;
         font: 500 18px 'Inter';
         color: #fff;
-
         transition: .3s;
         cursor: pointer;
     }
@@ -51,5 +47,11 @@
     .selecionado {
         background-color: #37C79A;
     }
+
+    .imgs{
+        margin: 0px 10px 0px 0px;
+    }
+
+    
 }
 

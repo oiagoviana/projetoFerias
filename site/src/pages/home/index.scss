@@ -1,10 +1,18 @@
 .maho{
+    display: flex;
+    flex-direction: row;
 
+    
     .imagem {
-        display: flex;
-        justify-content: center;
-        margin-top: -36em;
-        margin-left: 25em;
-        height: 30em;
+        width: 33em;
+        height: 33em;
+        margin-top: 1.5em;
     }
+
+    .div-direita{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

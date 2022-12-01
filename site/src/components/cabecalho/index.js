@@ -15,20 +15,22 @@ export default function Index() {
         } else {
             const usuarioLogado = storage('usuario-logado');
             setUsuario(usuarioLogado.nome);
-            }
+        }
     }, [])
 
     return (
-        
+
         <header className='cabecalho'>
-            <div className='bemvindo'> Seja bem-vindo, {usuario} !</div>
-            <div>
-                <div className='usuario'>
-                    <span> { usuario[0].toUpperCase() }</span>
+            <div className='div-cabe'>
+                <div className='bemvindo'> Seja bem-vindo, {usuario} !</div>
+                <div>
+                    <div className='usuario'>
+                        <span> {usuario[0].toUpperCase()}</span>
+                    </div>
                 </div>
             </div>
         </header>
-    
-        
+
+
     );
 }
